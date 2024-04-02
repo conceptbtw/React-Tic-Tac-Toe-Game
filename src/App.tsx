@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="">
+    <div className="min-h-svh flex flex-col justify-center items-center bg-background">
       <Header />
       <Main />
       <Footer />

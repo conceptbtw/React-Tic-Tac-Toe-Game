@@ -15,7 +15,7 @@ export default function Main() {
       return;
     }
     const nextSquares = squares.slice();
-    nextSquares[i] = xIsNext ? "X" : "O";
+    nextSquares[i] = xIsNext ? "x" : "o";
     setSquares(nextSquares);
     setXIsNext(!xIsNext);
   };
@@ -26,7 +26,7 @@ export default function Main() {
   };
 
   return (
-    <main className="flex flex-col justify-center items-center">
+    <main className="p-4 flex flex-1 flex-col justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 text-text">
       <Winner squares={squares} />
       <Board squares={squares} handleClick={handleClick} />
       <Reset onClick={handleReset} />
