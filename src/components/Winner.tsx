@@ -16,7 +16,7 @@ const Winner: React.FC<WinnerProps> = ({ squares }) => {
   return (
     <div className="w-full p-px h-16 rounded-xl sm:h-20 md:h-24 lg:h-28 bg-gradient-to-r from-primary via-secondary to-accent">
       <div className="w-full h-full flex justify-center items-center rounded-xl bg-background bg-opacity-90">
-        <span className="text-xl text-text text-opacity-50 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text sm:text-2xl md:text-3xl lg:text-4xl">
+        <span className="text-center text-xl text-transparent bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text sm:text-2xl md:text-3xl lg:text-4xl">
           {result}
         </span>
       </div>
